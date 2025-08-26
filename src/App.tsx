@@ -1,11 +1,11 @@
-import './assets/css/includes.css'
+import React from 'react';
+import {useRoutes} from 'react-router-dom';
+import routes from './routes';
+import './assets/css/includes.css';
 
-function App() {
-  return (
-    <>
-    	<h1>Portfolio Start!</h1>
-    </>
-  )
+const App = () => {
+	const element = useRoutes(routes);
+	return element;
 }
 
-export default App
+export default App;
